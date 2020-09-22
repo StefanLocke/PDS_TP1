@@ -1,6 +1,6 @@
 # PDS_TP1
 
-ASD :
+ASD etendue :
 
 
 turtle ::= Turt(sujet*)
@@ -14,4 +14,25 @@ objets ::= Obj(nom)
 
 nom ::= Name(String)
 
+ASD Non-e :
 
+
+turtle ::= Turt(listSujet)
+
+listSujet ::= ListS(sujet,listSujet) 
+            | Nil
+
+sujet ::= Suj(nom,listPredicats*)
+
+listPredicats ::= ListPred(predicats,listPredicats)
+                  | Nil
+
+predicats ::= Pred(nom,listObjets)
+
+listObjets ::= ListObj(objets,listObjets)
+              | objets
+
+objets ::= Obj(nom) 
+         | Objtxt(String)
+
+nom ::= Name(String)

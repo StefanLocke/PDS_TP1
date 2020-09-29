@@ -4,8 +4,13 @@ import java.util.List;
 
 public class ASD {
 	static public class Document {
-		
-		class Turtle {
+		Turtle turt;
+
+		/*public Document(Turtle t) {
+			turt = t;
+		}*/
+
+		public class Turtle {
 			List<Sujet> sujets;
 
 			public Turtle(List<Sujet> s) {
@@ -13,7 +18,7 @@ public class ASD {
 			}
 		}
 
-		class Sujet {
+		public class Sujet {
 			Nom nom;
 			List<Predicat> preds;
 
@@ -21,9 +26,10 @@ public class ASD {
 				nom = n;
 				preds = p;
 			}
+
 		}
 
-		class Predicat {
+		public class Predicat {
 			Nom nom;
 			List<Objet> objets;
 
@@ -33,11 +39,11 @@ public class ASD {
 			}
 		}
 
-		abstract class Objet {
+		public abstract class Objet {
 
 		}
 
-		class ObjNom extends Objet {
+		public class ObjNom extends Objet {
 			Nom nom;
 
 			public ObjNom(Nom n) {
@@ -45,15 +51,19 @@ public class ASD {
 			}
 		}
 
-		class ObjTxt extends Objet {
+		public class ObjTxt extends Objet {
 			String string;
+
+			public String getVal() {
+				return string;
+			}
 
 			public ObjTxt(String s) {
 				string = s;
 			}
 		}
 
-		class Nom {
+		public class Nom {
 			String string;
 
 			public Nom(String s) {

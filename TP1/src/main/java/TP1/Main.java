@@ -58,9 +58,6 @@ public class Main {
 
 		// Use with lexer and parser
 		
-		ASD.Document d = new ASD.Document(null);
-		ASD.Document.Nom n = d.new Nom("hello");
-		System.out.println(n.string);
 		try {
 		      // Set input
 		      CharStream input;

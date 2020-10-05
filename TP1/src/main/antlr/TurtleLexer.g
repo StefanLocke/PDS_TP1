@@ -16,7 +16,7 @@ fragment ASCII  : ~('\n'|'"'|'<'|'>');
 
 CHEVRONLEFT : '<';
 CHEVRONRIGHT : '>';
-NOM : [A-Za-z0-9-]+;
+NOM : [&A-Za-z0-9' '-]+;
 GUI : '"';
 PTV : ';';
 PT : '.';

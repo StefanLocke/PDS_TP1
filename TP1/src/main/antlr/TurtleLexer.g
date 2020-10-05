@@ -14,4 +14,10 @@ WS : (' '|'\n'|'\t'|'\r'|'\u000C')+ -> skip
 
 fragment ASCII  : ~('\n'|'"'|'<'|'>');
 
-CHEVRON
+CHEVRONLEFT : '<';
+CHEVRONRIGHT : '>';
+NOM : [A-Za-z0-9-]+;
+GUI : '"';
+PTV : ';';
+PT : '.';
+VRG : ',';

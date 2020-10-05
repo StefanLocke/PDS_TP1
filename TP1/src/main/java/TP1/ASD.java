@@ -6,9 +6,9 @@ public class ASD {
 	static public class Document {
 		Turtle turt;
 
-		/*public Document(Turtle t) {
+		public Document(Turtle t) {
 			turt = t;
-		}*/
+		}
 
 		public class Turtle {
 			List<Sujet> sujets;
@@ -33,7 +33,7 @@ public class ASD {
 			Nom nom;
 			List<Objet> objets;
 
-			public Predicat(Nom n, List<Objet> o) {
+			public Predicat(Nom n, List<Objet>  o) {
 				nom = n;
 				objets = o;
 			}
